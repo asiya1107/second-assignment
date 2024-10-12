@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+#display-image {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+#thumbnail-container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1001;
+  gap: 5px;
+}
+@media (min-width: 600px) {
+  #display-image {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+img.focused {
+  outline: 2px solid yellow;
+}
